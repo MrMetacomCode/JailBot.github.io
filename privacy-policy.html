@@ -39,28 +39,29 @@
         <h4><u>Information Collected</u></h4>
         <p>Per Guild:</p>
         <ul>
-            <li>ID of the Discord guild.</li>
-            <li>Name of the Discord guild.</li>
-            <li>ID of the Discord jail category that is created.</li>
-            <li>ID of the Discord text channel "tickets" that is created.</li>
-            <li>ID of the Discord text channel "dispute-channel" that is created (if the option for it to be enabled is selected).</li>
-            <li>ID of the Discord text channel "staff-commands" that is created.</li>
-            <li>ID of the Discord text channel that is given by a guild administrator where notifications are sent of who
+            <li>ID of the guild.</li>
+            <li>Name of the guild.</li>
+            <li>ID of the jail category that is created.</li>
+            <li>ID of the text channel "tickets" that is created.</li>
+            <li>ID of the text channel "dispute-channel" that is created (if the option for it to be enabled is selected).</li>
+            <li>ID of the text channel "staff-commands" that is created.</li>
+            <li>ID of the text channel that is given by a guild administrator where notifications are sent of who
                 was jailed and for how long. Also known as the "general channel" or "jail notifications channel".</li>
-            <li>ID of the Discord user role "Jail" that is created.</li>
-            <li>ID of the Discord user role "JailMod" that is created.</li>
+            <li>ID of the user role "Jail" that is created.</li>
+            <li>ID of the user role "JailMod" that is created.</li>
             <li>Timezone that is given by a guild administrator.</li>
         </ul>
         <p>Per User that is "Jailed":</p>
         <ul>
-            <li>ID of the Discord guild they were jailed in.</li>
-            <li>ID of the Discord user that was jailed.</li>
-            <li>ID of the Discord "ticket" message that is sent in the Discord "tickets" text channel.</li>
-            <li>ID of the Discord user that jailed the Discord user getting jailed.</li>
-            <li>The date and time the Discord user is jailed on including year, month, day, hour, minute, and second.</li>
-            <li>The reason the Discord user was jailed which is given by the Discord user that has the Discord role
-                "JailMod" and is using the "/jail &#60member&#62" command to jail given Discord user.</li>
-            <li>Each Discord user role the Discord user being jailed has. This includes the ID of the guild the user role
+            <li>ID of the guild they were jailed in.</li>
+            <li>ID of the user that was jailed.</li>
+            <li>ID of the "ticket" message that is sent in the "tickets" text channel.</li>
+            <li>ID of the user that jailed the user getting jailed.</li>
+            <li>The date and time the user is jailed on including year, month, day, hour, minute, and second.</li>
+            <li>The reason the user was jailed which is given by the user that has the role
+                "Jail Mod" and is using the "/jail &#60member&#62" command to jail given user. This is message content
+                and therefore encrypted when stored as well as automatically deleted after 30 days as required by Discord.</li>
+            <li>Each user role the user being jailed has. This includes the ID of the guild the user role
                 is in, ID of the user being jailed, and the name of the role.</li>
         </ul>
         <h4><u>How Collected Information is Used</u></h4>
