@@ -50,7 +50,7 @@
                 was jailed and for how long. Also known as the "general channel" or "jail notifications channel".</li>
             <li>ID of the user role "Jail" that is created.</li>
             <li>ID of the user role "JailMod" that is created.</li>
-            <li>Timezone that is given by a guild administrator.</li>
+            <li>Timezone that is given by a guild administrator. This is encrypted when being stored.</li>
         </ul>
         <p>Per User that is "Jailed":</p>
         <ul>
@@ -61,7 +61,7 @@
             <li>The date and time the user is jailed on including year, month, day, hour, minute, and second.</li>
             <li>The reason the user was jailed which is given by the user that has the role
                 "Jail Mod" and is using the "/jail &#60member&#62" command to jail given user. This is message content
-                and therefore encrypted when stored as well as automatically deleted after 30 days as required by Discord.</li>
+                and therefore encrypted when being stored as well as automatically deleted after 30 days as required by Discord.</li>
             <li>Each user role the user being jailed has. This includes the ID of the guild the user role
                 is in, ID of the user being jailed, and the name of the role.</li>
         </ul>
