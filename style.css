@@ -10,37 +10,35 @@
 }
 
 .top-table-button {
-    display: table;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     width: 100%;
-    margin: auto;
 }
 
 .right-align-button {
-    float: right;
-    border-color: black;
-}
-
-.button-spacing-right {
-    margin-right: 15px;
+    margin-left: 10px; /* Add left margin for spacing between buttons */
 }
 
 a.grey-button {
     color: black;
     border-color: #D3D3D3;
     background-color: #D3D3D3;
-}
-
-.vertical-center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  padding-left: 2px;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
 }
 
 .default-font {
     font-family: Bahnschrift, sans-serif;
     font-weight: bold;
     color: white;
+}
+
+h1, h2, h3, h4, h5, p, ul, li, u {
+    color: white;
+}
+
+body {
+    background-color: #181a1b;
 }
