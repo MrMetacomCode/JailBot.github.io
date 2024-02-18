@@ -36,6 +36,12 @@ a.green-button {
     background-color: #1b995e;
 }
 
+a.red-button {
+    color: white;
+    border-color: #D3D3D3;
+    background-color: #c90c38;
+}
+
 .vertical-center {
   margin: 0;
   position: absolute;
