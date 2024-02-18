@@ -30,6 +30,12 @@ a.grey-button {
     background-color: #D3D3D3;
 }
 
+a.green-button {
+    color: white;
+    border-color: #1b995e;
+    background-color: #1b995e;
+}
+
 .vertical-center {
   margin: 0;
   position: absolute;
@@ -43,4 +49,21 @@ a.grey-button {
     font-family: Bahnschrift, sans-serif;
     font-weight: bold;
     color: white;
+}
+
+h1, h2, h3, h4, h5, p, ul, li, u {
+    color: white;
+}
+
+body {
+    background-color: #181a1b;
+}
+
+h1 {
+    text-align: center;
+}
+
+.code-syntax {
+    background-color: #333333;
+    font-weight: bold;
 }
