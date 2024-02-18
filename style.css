@@ -58,3 +58,12 @@ h1, h2, h3, h4, h5, p, ul, li, u {
 body {
     background-color: #181a1b;
 }
+
+h1 {
+    text-align: center;
+}
+
+.code-syntax {
+    background-color: #333333;
+    font-weight: bold;
+}
