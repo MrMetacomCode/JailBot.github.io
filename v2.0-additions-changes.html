@@ -9,7 +9,7 @@
     <title>JailBot</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2e353b;">
     <div class="container-fluid">
         <div class="top-table-button">
             <a class="navbar-brand" style="" href="index.html">
@@ -37,7 +37,8 @@
             <li>Custom Jail Times
                 <ul>
                     <li>Allows jailers to specify the exact number of months, weeks, days, hours, and minutes a user should
-                        stay in jail for both the <span class="code-syntax">/jail</span> and <span class="code-syntax">/jail/start-jail-vote</span> commands.</li>
+                        stay in jail for both the <span class="code-syntax">/jail</span> and
+                        <span class="code-syntax">/start-jail-vote</span> commands.</li>
                 </ul>
             </li>
             <li>Integrated Ticketing System
@@ -46,6 +47,9 @@
                         where they can open a ticket with the JailMods. It's now built into JailBot, which means people
                         no longer need to use another bot such as TicketingTool (although they absolutely still can,
                         it's a great ticketing bot).</li>
+                    <li><em><u>JailBots ticketing system will be enabled by default.</u></em> If you want to continue to use
+                        another bot to handle jail inmate dispute requests via tickets they create, run the
+                        <span class="code-syntax">/toggle-integrated-jail-ticketing</span> command and disable it.</li>
                 </ul>
             </li>
             <li>Jail Times Restrictions
