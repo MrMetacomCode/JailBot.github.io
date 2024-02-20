@@ -38,8 +38,13 @@ a.green-button {
 
 a.red-button {
     color: white;
-    border-color: #D3D3D3;
+    border-color: #c90c38;
     background-color: #c90c38;
+}
+
+a.wiki-link {
+    text-decoration: none;
+    color: #55a9f7;
 }
 
 .vertical-center {
@@ -57,8 +62,9 @@ a.red-button {
     color: white;
 }
 
-h1, h2, h3, h4, h5, p, ul, li, u {
+html * {
     color: white;
+    font-family: Bahnschrift, sans-serif;
 }
 
 body {
