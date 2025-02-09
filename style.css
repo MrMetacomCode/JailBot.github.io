@@ -79,3 +79,11 @@ h1 {
     background-color: #333333;
     font-weight: bold;
 }
+
+h3 {
+    text-decoration-line: underline;
+}
+
+a {
+    color: #0068EE;
+}
