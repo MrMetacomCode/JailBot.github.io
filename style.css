@@ -1,89 +1,219 @@
-.center {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
-}
-.center td {
-    text-align: center;
-}
-
-.top-table-button {
-    display: table;
-    width: 100%;
-    margin: auto;
+:root {
+    --bg: #181a1b;
+    --surface: #212529;
+    --text: #f3f5f6;
+    --muted: #c8ced3;
+    --link: #9ec2ff;
+    --link-hover: #d3e4ff;
+    --green: #1b995e;
+    --green-hover: #157a4a;
+    --button-muted: #3a4148;
+    --button-muted-hover: #4a525a;
+    --line: #32383d;
 }
 
-.right-align-button {
-    float: right;
-    border-color: black;
-}
-
-.button-spacing-right {
-    margin-right: 15px;
-}
-
-a.grey-button {
-    color: black;
-    border-color: #D3D3D3;
-    background-color: #D3D3D3;
-}
-
-a.green-button {
-    color: white;
-    border-color: #1b995e;
-    background-color: #1b995e;
-}
-
-a.red-button {
-    color: white;
-    border-color: #c90c38;
-    background-color: #c90c38;
-}
-
-a.wiki-link {
-    text-decoration: none;
-    color: #55a9f7;
-}
-
-.vertical-center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  padding-left: 2px;
-}
-
-.default-font {
-    font-family: Bahnschrift, sans-serif;
-    font-weight: bold;
-    color: white;
-}
-
-html * {
-    color: white;
-    font-family: Bahnschrift, sans-serif;
+* {
+    box-sizing: border-box;
 }
 
 body {
-    background-color: #181a1b;
-}
-
-h1 {
-    text-align: center;
-}
-
-.code-syntax {
-    background-color: #333333;
-    font-weight: bold;
-}
-
-h3 {
-    text-decoration-line: underline;
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Bahnschrift, "Segoe UI", sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.6;
 }
 
 a {
-    color: #0068EE;
+    color: var(--link);
+}
+
+a:hover {
+    color: var(--link-hover);
+}
+
+.site-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px 28px;
+    padding: 14px 24px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--line);
+    position: sticky;
+    top: 0;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text);
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.brand img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 18px;
+}
+
+.nav-link {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.button:hover {
+    color: white;
+}
+
+.button-primary {
+    background: var(--green);
+}
+
+.button-primary:hover {
+    background: var(--green-hover);
+}
+
+.button-secondary {
+    background: var(--button-muted);
+}
+
+.button-secondary:hover {
+    background: var(--button-muted-hover);
+}
+
+a:focus-visible,
+.button:focus-visible {
+    outline: 2px solid var(--link);
+    outline-offset: 3px;
+}
+
+.home {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+    text-align: center;
+}
+
+.home-logo {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+
+.home h1 {
+    margin: 14px 0 22px;
+    font-size: 2.4rem;
+}
+
+.home-card {
+    background: var(--surface);
+    border-radius: 20px;
+    padding: 28px 28px 32px;
+}
+
+.summary {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.home-card blockquote {
+    margin: 28px 0 0;
+}
+
+.home-card blockquote p {
+    margin: 0;
+}
+
+.attribution {
+    margin: 12px 0 24px;
+}
+
+.page {
+    max-width: 70ch;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+}
+
+.page h1,
+.dateline {
+    text-align: center;
+}
+
+.page h1 {
+    margin-bottom: 0.25rem;
+}
+
+.page h3 {
+    margin: 2rem 0 0.75rem;
+    font-size: 1.35rem;
+}
+
+.page h4 {
+    margin: 1.75rem 0 0.5rem;
+    font-size: 1.15rem;
+}
+
+.page h5 {
+    margin: 1.35rem 0 0.4rem;
+    font-size: 1.05rem;
+}
+
+.page ul {
+    padding-left: 1.25rem;
+}
+
+.page li + li {
+    margin-top: 0.35rem;
+}
+
+.code-syntax {
+    background: #333333;
+    border-radius: 4px;
+    font-weight: 700;
+    padding: 0.05em 0.35em;
+}
+
+@media (max-width: 860px) {
+    .site-header {
+        padding: 14px 16px;
+    }
+
+    .site-nav {
+        width: 100%;
+    }
+
+    .home {
+        padding-top: 36px;
+    }
+
+    .home-card {
+        padding: 22px 18px 26px;
+    }
 }
