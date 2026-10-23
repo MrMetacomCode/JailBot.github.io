@@ -2,140 +2,190 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="JailBot_Logo_Rounded.png">
     <title>JailBot</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container-fluid">
-        <div class="top-table-button">
-            <a class="navbar-brand" style="" href="index.html">
-              <img src="JailBot_Logo.png" alt="JailBot Logo" class="d-inline-block align-text-middle"
-                   style="border-radius: 50%; width: 40px; height: 40px;">
-              <span class="default-font">JailBot</span>
-            </a>
-            <a class="btn right-align-button grey-button" href="contact-us.html">Contact Us</a>
-            <a class="btn right-align-button button-spacing-right grey-button" href="terms-of-service.html">Terms of Service</a>
-            <a class="btn right-align-button button-spacing-right grey-button" href="privacy-policy.html">Privacy Policy</a>
-            <a class="btn right-align-button button-spacing-right grey-button" href="https://jailbot.tawk.help/">Guides/Knowledge Base</a>
-            <a class="btn right-align-button button-spacing-right green-button"
-               href="https://www.buymeacoffee.com/JailBot" target="_blank">Buy Me a Coffee!</a>
-            <a class="btn right-align-button button-spacing-right green-button"
-               href="https://top.gg/bot/895542340993822741?s=06cb56ec97ee8" target="_blank">Invite Bot to Server</a>
-        </div>
-    </div>
-</nav>
-<div style="padding: 2% 2% 2% 2%">
-    <br>
-    <br>
+<header class="site-header">
+    <a class="brand" href="index.html">
+        <img src="JailBot_Logo.png" alt="JailBot Logo">
+        <span>JailBot</span>
+    </a>
+    <nav class="site-nav">
+        <a class="nav-link" href="contact-us.html">Contact Us</a>
+        <a class="nav-link" href="terms-of-service.html">Terms of Service</a>
+        <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+        <a class="nav-link" href="https://jailbot.tawk.help/">Guides/Knowledge Base</a>
+        <a class="button button-secondary" href="https://www.buymeacoffee.com/JailBot" target="_blank" rel="noopener noreferrer">Buy Me a Coffee!</a>
+        <a class="button button-primary" href="https://top.gg/bot/895542340993822741?s=06cb56ec97ee8" target="_blank" rel="noopener noreferrer">Invite Bot to Server</a>
+    </nav>
+</header>
+<main class="page">
     <h1>Privacy Policy</h1>
-    <p style="text-align: center;">Last updated: September 29, 2024</p>
-    <div style="padding-left: 16%; padding-right: 16%;">
-        <p>Please read this Privacy Policy carefully before using JailBot. This Privacy Policy is subject to change at
-            any time, and it is suggested you check it often.</p>
-        <h5>Definitions</h5>
-        <p>For the purposes of this Privacy Policy:</p>
-        <ul>
-            <li><strong>Text channel</strong> means a Discord text channel.</li>
-            <li><strong>User</strong> means a Discord user.</li>
-            <li><strong>User role</strong> means a Discord user role.</li>
-            <li><strong>Guild</strong> means a Discord guild/server.</li>
-        </ul>
-        <h4><u>Information Collected</u></h4>
-        <p>Per AutoMod Rule Configured:</p>
-        <ul>
-            <li>ID of the guild.</li>
-            <li>ID of the Discord AutoMod rule to jail users on.</li>
-            <li>The sentence length (time) a user will be jailed when the AutoMod rule triggers.</li>
-        </ul>
-        <p>Per Excluded Category:</p>
-        <ul>
-            <li>ID of the guild.</li>
-            <li>ID of the category to exclude from jail checks.</li>
-        </ul>
-        <p>Per Excluded Channel:</p>
-        <ul>
-            <li>ID of the guild.</li>
-            <li>ID of the channel to exclude from jail checks.</li>
-        </ul>
-        <p>Per Guild:</p>
-        <ul>
-            <li>ID of the guild.</li>
-            <li>ID of the jail category that is created.</li>
-            <li>ID of the closed jail tickets category that is created.</li>
-            <li>ID of the text channel "all-tickets" that is created.</li>
-            <li>ID of the "create-a-ticket" channel that is created</li>
-            <li>ID of the message prompt that is sent in the "create-a-ticket" channel</li>
-            <li>ID of the user role "Jail Inmate" that is created.</li>
-            <li>ID of the user role "Jail Mod" that is created.</li>
-            <li>Number of jail votes required for a vote to pass (set by a server admin).</li>
-            <li>ID of the text channel where jail votes will be sent (set by a server admin).</li>
-            <li>ID of the text channel where notifications are sent (set by a server admin) of who was jailed and for how
-                long.
-                Also known as the "general channel" or "jail notifications channel".
-            </li>
-            <li>The custom regular jail notification message (if set by a server admin). This is encrypted when being stored.</li>
-            <li>The custom forever jail notification message (if set by a server admin). This is encrypted when being stored.</li>
-            <li>Whether anonymous jail tickets are enabled (set by a server admin).</li>
-            <li>ID of the text channel where admin logs will be sent (set by a server admin).</li>
-            <li>Timezone (set by a server admin). This is encrypted when being stored.</li>
-        </ul>
-        <p>Per User that is "Jailed":</p>
-        <ul>
-            <li>ID of the guild they were jailed in.</li>
-            <li>ID of the user that was jailed.</li>
-            <li>ID of the "ticket" message that is sent in the "tickets" text channel.</li>
-            <li>ID of the user that initiated the jailing (a Jail Mod).</li>
-            <li>ID of the ticket channel if the jailed user creates one.</li>
-            <li>The date and time the user is jailed on including year, month, day, hour, minute, and second.</li>
-            <li>The reason the user was jailed. This is encrypted when being stored.</li>
-            <li>The sentence length (time) the user will be jailed for.</li>
-            <li>The ID of each role the user that is being jailed has. This includes the guild ID the role exists in.</li>
-        </ul>
-        <p>Jail Time Restrictions for <span class="code-syntax">/jail</span>:</p>
-        <ul>
-            <li>ID of the guild.</li>
-            <li>The maximum number of years, months, weeks, days, hours, and minutes a user can be jailed in that guild.
-                Set by a guild admin. Includes whether the guild admin allows the "Forever" jail sentence option.</li>
-        </ul>
-        <p>Jail Vote Time Restrictions for <span class="code-syntax">/start-jail-vote</span>:</p>
-        <ul>
-            <li>ID of the guild.</li>
-            <li>The maximum number of years, months, weeks, days, hours, and minutes a user can be jailed in that guild.
-                Set by a guild admin. Includes whether the guild admin allows the "Forever" jail sentence option.</li>
-        </ul>
-        <p>Per Jail Vote:</p>
-        <ul>
-            <li>ID of the guild.</li>
-            <li>ID of the channel the vote was sent to.</li>
-            <li>ID of the vote message.</li>
-            <li>ID of the user that will be jailed if the vote passes.</li>
-            <li>The reason the user will be jailed if the vote passes. This is encrypted when being stored.</li>
-            <li>The time the user will spend in jail if the vote passes.</li>
-        </ul>
-        <p><u>Anonymous</u> Statistics:</p>
-        <ul>
-            <li>The total number of servers per day that JailBot is in.</li>
-            <li>The number of servers JailBot has been added to and removed from each day.</li>
-            <li>The number of times each command has been run per day.</li>
-            <li>The median and maximum member counts for servers that JailBot is in.</li>
-        </ul>
-        <h4><u>How Collected Information is Used</u></h4>
-        <p>Collected identifiable information is used exclusively to support the bot's functionality.
-            Anonymous statistics are aggregated and cannot be traced back to any guild or user identifiers. This data
-            is NEVER shared or sold. Guild configuration information and user jail history (for the purpose of the
-            <span class="code-syntax">/jail-history</span> command/feature) is saved indefinitely unless a data
-            deletion request is made.</p>
-        <h4><u>Request Deletion of Information</u></h4>
-        <p>Email jailbot.support@meta-dev.net to request deletion of your guild's saved information.
-            Please include the ID of your guild. Get this by first
-            <a href="https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID" target="_blank">
-                enabling developer mode</a>, then right-clicking on your server and selecting "Copy Server ID". You will
-            then be asked to verify your data deletion request via Discord DMs to ensure you are the server owner.</p>
-    </div>
-</div>
+    <p class="dateline">Last updated: October 23, 2026</p>
+    <p>Please read this Privacy Policy carefully before using JailBot. This Privacy Policy is subject to change at
+        any time, and it is suggested you check it often.</p>
+    <h5>Definitions</h5>
+    <p>For the purposes of this Privacy Policy:</p>
+    <ul>
+        <li><strong>Text channel</strong> means a Discord text channel.</li>
+        <li><strong>User</strong> means a Discord user.</li>
+        <li><strong>User role</strong> means a Discord user role.</li>
+        <li><strong>Guild</strong> means a Discord guild/server.</li>
+    </ul>
+    <h4><u>Information Collected</u></h4>
+    <p>Per AutoMod Rule Configured:</p>
+    <ul>
+        <li>ID of the guild.</li>
+        <li>ID of the Discord AutoMod rule to jail users on.</li>
+        <li>The sentence length (time) a user will be jailed when the AutoMod rule triggers.</li>
+        <li>For a custom sentence, the number of months, weeks, days, hours, and minutes.</li>
+    </ul>
+    <p>Per Excluded Category:</p>
+    <ul>
+        <li>ID of the guild.</li>
+        <li>ID of the category to exclude from jail checks.</li>
+    </ul>
+    <p>Per Excluded Channel:</p>
+    <ul>
+        <li>ID of the guild.</li>
+        <li>ID of the channel to exclude from jail checks.</li>
+    </ul>
+    <p>Per Excluded Role:</p>
+    <ul>
+        <li>ID of the guild.</li>
+        <li>ID of the role that is kept when someone is jailed.</li>
+    </ul>
+    <p>Per Guild:</p>
+    <ul>
+        <li>ID of the guild.</li>
+        <li>ID of the jail category that is created.</li>
+        <li>ID of the closed jail tickets category that is created.</li>
+        <li>ID of the text channel "jail-logs" that is created.</li>
+        <li>ID of the "create-dispute-ticket" channel that is created.</li>
+        <li>ID of the message prompt that is sent in the "create-dispute-ticket" channel.</li>
+        <li>ID of JailBot's managed role.</li>
+        <li>ID of the user role "Jail Inmate" that is created.</li>
+        <li>ID of the user role "Jail Mod" that is created.</li>
+        <li>Number of jail votes required for a vote to pass (set by a server admin).</li>
+        <li>ID of the text channel where jail votes will be sent (set by a server admin).</li>
+        <li>ID of the text channel where notifications are sent (set by a server admin) of who was jailed and for how
+            long.
+            Also known as the "general channel" or "jail notifications channel".
+        </li>
+        <li>The custom regular jail notification message (if set by a server admin). This is encrypted when being stored.</li>
+        <li>The custom forever jail notification message (if set by a server admin). This is encrypted when being stored.</li>
+        <li>Whether anonymous jailing is enabled (set by a server admin).</li>
+        <li>Whether integrated dispute tickets are enabled (set by a server admin).</li>
+        <li>ID of the text channel where admin logs will be sent (set by a server admin).</li>
+    </ul>
+    <p>Per User that is "Jailed":</p>
+    <ul>
+        <li>ID of the guild they were jailed in.</li>
+        <li>ID of the user that was jailed.</li>
+        <li>ID of the jail log message that is sent in the "jail-logs" text channel.</li>
+        <li>Who jailed them. This is the jailer's user ID, or a label when no one person jailed them, such as a community
+            vote or a Discord AutoMod action.</li>
+        <li>Whether the jailer is shown as anonymous.</li>
+        <li>ID of the dispute ticket channel if the jailed user creates one.</li>
+        <li>The date and time the user is jailed, stored in UTC.</li>
+        <li>The scheduled release date and time, stored in UTC, when the sentence is not forever.</li>
+        <li>The reason the user was jailed. This is encrypted when being stored.</li>
+        <li>The sentence length (time) the user will be jailed for.</li>
+        <li>The ID of each role removed from the jailed user, and the guild ID that role exists in. Excluded roles,
+            integration-managed roles, the server booster role, the "Jail Inmate" role, and @everyone are not saved.</li>
+    </ul>
+    <p>Per Past Jail, kept after the user is released, for <span class="code-syntax">/jail-history</span>:</p>
+    <ul>
+        <li>ID of the guild they were jailed in.</li>
+        <li>ID of the user that was jailed.</li>
+        <li>ID of the jail log message.</li>
+        <li>Who jailed them, using the same user ID or label stored while they were jailed.</li>
+        <li>Whether the jailer was shown as anonymous.</li>
+        <li>The date and time the user was jailed, and the date and time they were released. Both are stored in UTC.</li>
+        <li>The total time they spent jailed.</li>
+        <li>The reason the user was jailed. This is encrypted when being stored.</li>
+    </ul>
+    <p>Jail Time Restrictions for <span class="code-syntax">/jail</span>:</p>
+    <ul>
+        <li>ID of the guild.</li>
+        <li>The maximum number of years, months, weeks, days, hours, and minutes a user can be jailed in that guild.
+            Set by a guild admin. Includes whether the guild admin allows the "Forever" jail sentence option.</li>
+    </ul>
+    <p>Jail Vote Time Restrictions for <span class="code-syntax">/start-jail-vote</span>:</p>
+    <ul>
+        <li>ID of the guild.</li>
+        <li>The maximum number of years, months, weeks, days, hours, and minutes a user can be jailed in that guild.
+            Set by a guild admin. Includes whether the guild admin allows the "Forever" jail sentence option.</li>
+    </ul>
+    <p>Per Jail Vote:</p>
+    <ul>
+        <li>ID of the guild.</li>
+        <li>ID of the channel the vote was sent to.</li>
+        <li>ID of the vote message.</li>
+        <li>ID of the user that will be jailed if the vote passes.</li>
+        <li>The reason the user will be jailed if the vote passes. This is encrypted when being stored.</li>
+        <li>The time the user will spend in jail if the vote passes.</li>
+    </ul>
+    <p>Per Premium Customization, when a server admin sets it:</p>
+    <ul>
+        <li>ID of the guild.</li>
+        <li>The custom embed color.</li>
+        <li>The custom embed footer. This is encrypted when being stored.</li>
+        <li>The custom embed icon URL. This is encrypted when being stored.</li>
+    </ul>
+    <p>Per Premium Grant or Discord Entitlement:</p>
+    <ul>
+        <li>ID of the guild.</li>
+        <li>ID of the Discord entitlement and its SKU, for entitlements that are created, deleted, or refunded.</li>
+        <li>For free premium granted by the bot operator: the premium level, how many months were given, the
+            expiration date, and any notes entered with that grant.</li>
+    </ul>
+    <p>Per Command Announcement. One announcement is stored for the bot, not one per server:</p>
+    <ul>
+        <li>ID of the guild where the announcement was saved.</li>
+        <li>The announcement text, an optional footer, an optional image URL, and up to two optional links.</li>
+        <li>Whether the announcement is a Top.gg vote reminder, whether it is marked important, a goal amount, and a
+            goal description.</li>
+        <li>ID of the guild and ID of the user for each person who has already been shown a one-time announcement.
+            These view records are removed when a new announcement is saved. An important announcement, and a Top.gg
+            vote reminder, do not record who has seen it.</li>
+    </ul>
+    <p>Per Server Banned from Using JailBot:</p>
+    <ul>
+        <li>ID of the guild.</li>
+        <li>The reason the bot operator entered.</li>
+    </ul>
+    <p><u>Anonymous</u> Statistics:</p>
+    <ul>
+        <li>The total number of servers per day that JailBot is in.</li>
+        <li>The number of premium servers per day.</li>
+        <li>The number of servers JailBot has been added to and removed from each day.</li>
+        <li>The number of times each command has been run per day. This count is not tied to a user or a guild.</li>
+        <li>The median and maximum member counts for servers that JailBot is in.</li>
+    </ul>
+    <p>Buy Me a Coffee totals are kept only as three numbers: money received in the current month, the number of
+        active memberships, and the number of unique one-time donors this month. Donor names, email addresses, and
+        messages are not stored.</p>
+    <h4><u>How Collected Information is Used</u></h4>
+    <p>Collected identifiable information is used to support the bot's functionality.
+        Anonymous statistics are aggregated counts and cannot be traced back to any guild or user identifiers.
+        Collected information is not sold. Guild configuration, active jails, and jail history (for the
+        <span class="code-syntax">/jail-history</span> command/feature) are saved until a data deletion request is
+        made.</p>
+    <p>JailBot sends its total server count to Top.gg. To decide whether to show a command announcement, JailBot may
+        send that person's Discord user ID to Top.gg and ask whether they have voted. It does this for a Top.gg vote
+        reminder, unless that server's premium status already hides the reminder, and for an ordinary announcement the
+        person has not already seen on a server that is not premium. It does not do this for an important announcement.
+        The vote result is not saved.</p>
+    <h4><u>Request Deletion of Information</u></h4>
+    <p>Email jailbot.support@meta-dev.net to request deletion of your guild's saved information.
+        Please include the ID of your guild. Get this by first
+        <a href="https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID" target="_blank" rel="noopener noreferrer">
+            enabling developer mode</a>, then right-clicking on your server and selecting "Copy Server ID". You will
+        then be asked to verify your data deletion request via Discord DMs to ensure you are the server owner.</p>
+</main>
 </body>
 </html>
