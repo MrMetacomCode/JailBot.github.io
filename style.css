@@ -7,6 +7,9 @@
     --link-hover: #d3e4ff;
     --green: #1b995e;
     --green-hover: #157a4a;
+    --coffee: #ffdd00;
+    --coffee-hover: #f0cf00;
+    --coffee-text: #1c1408;
     --button-muted: #3a4148;
     --button-muted-hover: #4a525a;
     --line: #32383d;
@@ -18,6 +21,9 @@
 
 body {
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background: var(--bg);
     color: var(--text);
     font-family: Bahnschrift, "Segoe UI", sans-serif;
@@ -66,16 +72,7 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 8px 18px;
-}
-
-.nav-link {
-    color: var(--text);
-    text-decoration: none;
-}
-
-.nav-link:hover {
-    color: white;
+    gap: 8px 10px;
 }
 
 .button {
@@ -91,6 +88,14 @@ a:hover {
     color: white;
 }
 
+.button-muted {
+    background: var(--button-muted);
+}
+
+.button-muted:hover {
+    background: var(--button-muted-hover);
+}
+
 .button-primary {
     background: var(--green);
 }
@@ -99,18 +104,25 @@ a:hover {
     background: var(--green-hover);
 }
 
-.button-secondary {
-    background: var(--button-muted);
+.button-coffee {
+    background: var(--coffee);
+    color: var(--coffee-text);
 }
 
-.button-secondary:hover {
-    background: var(--button-muted-hover);
+.button-coffee:hover {
+    background: var(--coffee-hover);
+    color: var(--coffee-text);
 }
 
 a:focus-visible,
 .button:focus-visible {
     outline: 2px solid var(--link);
     outline-offset: 3px;
+}
+
+.home,
+.page {
+    flex: 1;
 }
 
 .home {
@@ -198,6 +210,24 @@ a:focus-visible,
     border-radius: 4px;
     font-weight: 700;
     padding: 0.05em 0.35em;
+}
+
+.site-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 24px;
+    padding: 22px 24px 28px;
+    border-top: 1px solid var(--line);
+}
+
+.site-footer a {
+    color: var(--muted);
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    color: var(--text);
 }
 
 @media (max-width: 860px) {
